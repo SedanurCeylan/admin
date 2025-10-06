@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+        integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ürün</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Admin</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContext">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContext">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="kategori.html" class="nav-link">Kategori</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="urun.html" class="nav-link ">Ürün</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="slider.html" class="nav-link">Slider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="role.html" class="nav-link">Rol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kullanici.html" class="nav-link">Kullanıcı</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="siparis.html" class="nav-link active">Sipariş</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sedos Ceylan</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="hesabim.html" class="dropdown-item">Hesabım</a></li>
+                                <li><a href="#" class="dropdown-item">Çıkış Yap</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Giriş</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="register.html" class="nav-link">Hesap Oluştur</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-3 mb-5">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Sipariş No: #5</h5>
+                        <span class="badge bg-success p-2">Teslim Edildi</span>
+                    </div>
+                    <div class="card-body">
+                         <div class="table-responsive">
+                            <table class="table table-bordered table-striped mb-0">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <th style="width: 40px;">Id</th>
+                                        <th style="width: 100px;">Resim</th>
+                                        <th>Ürün Adı</th>
+                                        <th>Fiyat</th>
+                                        <th>Adet</th>
+                                        <th>Toplam</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="img/7.jpeg" class="img-fluid" alt="">
+                                        </td>
+                                        <td>çok akıllı saat</td>
+                                        <td>3000</td>
+                                        <td>2</td>
+                                        <td>6000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="img/7.jpeg" class="img-fluid" alt="">
+                                        </td>
+                                        <td>çok akıllı saat</td>
+                                        <td>3000</td>
+                                        <td>2</td>
+                                        <td>6000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="img/7.jpeg" class="img-fluid" alt="">
+                                        </td>
+                                        <td>çok akıllı saat</td>
+                                        <td>3000</td>
+                                        <td>2</td>
+                                        <td>6000</td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td colspan="4"></td>
+                                        <td>Ara Toplam</td>
+                                        <td>18.000</td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td colspan="4"></td>
+                                        <td>Vergi</td>
+                                        <td>8.000 (%20)</td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td colspan="4"></td>
+                                        <td>Kargo</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td colspan="4"></td>
+                                        <td>Toplam</td>
+                                        <td>26.000</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered mb-0 mt-3">
+                                <tr>
+                                    <td style="width: 200px;">Tahmini Teslim Tarihi:</td>
+                                    <td>10/10/2026</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px;">Ad Soyad:</td>
+                                    <td>sedoscum</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px;">Email:</td>
+                                    <td>sdnrcyln2@gmsil.com</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px;">Teslimat Adresi:</td>
+                                    <td>çıkmaz sokak</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px;">Fatura Adresi:</td>
+                                    <td>çıkmaz sokak</td>
+                                </tr>
+                                 <tr>
+                                    <td style="width: 200px;">Ödeme Bilgileri:</td>
+                                    <td>1234-1234-****-**** (Yapı Kredi - 3 Taksit)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+        integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

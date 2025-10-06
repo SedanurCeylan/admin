@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Kategori</title>
+    <title>Slider</title>
 </head>
 
 <body>
@@ -25,13 +25,13 @@
                 <div class="collapse navbar-collapse" id="navbarContext">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="kategori.html" class="nav-link active">Kategori</a>
+                            <a href="kategori.html" class="nav-link">Kategori</a>
                         </li>
                         <li class="nav-item">
                             <a href="urun.html" class="nav-link">Ürün</a>
                         </li>
                         <li class="nav-item">
-                            <a href="slider.html" class="nav-link">Slider</a>
+                            <a href="slider.html" class="nav-link active">Slider</a>
                         </li>
                         <li class="nav-item">
                             <a href="role.html" class="nav-link">Rol</a>
@@ -69,26 +69,49 @@
             <div class="col">
                 <div class="card shadow">
                     <div class="card-header py-1 d-flex justify-content-between">
-                        <h5 class="card-title">Kategori Ekle</h5>
-                        <a href="kategori.html" class="btn btn-sm btn-primary align-items-center">
+                        <h5 class="card-title">Slider Ekle</h5>
+                        <a href="slider.html" class="btn btn-sm btn-primary align-items-center">
                             <i class="fa-solid fa-list"></i>
                         </a>
                     </div>
                     <div class="card-body">
-                        
-                        <form >
+                        <form>
                             <div class="row mb-3">
-                                <label for="kategoriAdi" class="col-sm-2 col-form-label">Kategori Adı:</label>
+                                <label for="sliderResmi" class="col-sm-2 col-form-label">Slider Resmi:</label>
                                 <div class="col-sm-10">
-                                    <input type="text" id="kategoriAdi" class="form-control">
-
+                                    <img src="img/slider-1.jpeg" alt="" class="img-fluid rounded">
+                                </div>
+                            </div> 
+                            <div class="row mb-3">
+                                <label for="resimEkle" class="col-sm-2 col-form-label">Resim Ekle:</label>
+                                <div class="col-sm-10">
+                                    <input type="file" id="resimEkle" class="form-control">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="kategoriUrl" class="col-sm-2 col-form-label">URL:</label>
+                                <label for="sliderBaslik" class="col-sm-2 col-form-label">Başlık:</label>
                                 <div class="col-sm-10">
-                                    <input type="text" id="kategoriAdi" class="form-control">
+                                     <input type="text" id="sliderBaslik" class="form-control">
+                                </div>
+                            </div>
 
+                            <div class="row mb-3">
+                                <label for="sliderAciklama" class="col-sm-2 col-form-label">Slider Açıklama:</label>
+                                <div class="col-sm-10">
+                                    <textarea rows="3" id="sliderAciklama" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <label for="index" class="col-sm-2 col-form-label">İndex:</label>
+                                <div class="col-sm-10">
+                                     <input type="number" id="index" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="Aktif" class="col-sm-2 col-form-label" >Aktif:</label>
+                                <div class="col-sm-10">
+                                    <input type="checkbox" id="Aktif" class="form-check-input" checked>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -96,7 +119,6 @@
                                     <button type="submit" class="btn btn-primary">Kaydet</button>
                                 </div>
                             </div>
-                            
                         </form>
                     </div>
                 </div>

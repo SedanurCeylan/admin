@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Kategori</title>
+    <title>Roller</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarContext">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="kategori.html" class="nav-link active">Kategori</a>
+                            <a href="kategori.html" class="nav-link ">Kategori</a>
                         </li>
                         <li class="nav-item">
                             <a href="urun.html" class="nav-link">Ürün</a>
@@ -34,7 +34,7 @@
                             <a href="slider.html" class="nav-link">Slider</a>
                         </li>
                         <li class="nav-item">
-                            <a href="role.html" class="nav-link">Rol</a>
+                            <a href="role.html" class="nav-link" active>Rol</a>
                         </li>
                         <li class="nav-item">
                             <a href="kullanici.html" class="nav-link">Kullanıcı</a>
@@ -66,38 +66,79 @@
 
     <main class="container my-3">
         <div class="row">
-            <div class="col">
-                <div class="card shadow">
-                    <div class="card-header py-1 d-flex justify-content-between">
-                        <h5 class="card-title">Kategori Ekle</h5>
-                        <a href="kategori.html" class="btn btn-sm btn-primary align-items-center">
-                            <i class="fa-solid fa-list"></i>
-                        </a>
+            <div class="col-md-3">
+                <div class="card shadow h-100">
+                    <div class="card-header py-1">
+                        <h5 class="card-title">Rol Ekle</h5>
                     </div>
                     <div class="card-body">
-                        
-                        <form >
-                            <div class="row mb-3">
-                                <label for="kategoriAdi" class="col-sm-2 col-form-label">Kategori Adı:</label>
-                                <div class="col-sm-10">
-                                    <input type="text" id="kategoriAdi" class="form-control">
-
-                                </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="rolAdi" class="form-label">Rol Adı:</label>
+                                <input type="text" id="rolAdi" class="form-control">
                             </div>
-                            <div class="row mb-3">
-                                <label for="kategoriUrl" class="col-sm-2 col-form-label">URL:</label>
-                                <div class="col-sm-10">
-                                    <input type="text" id="kategoriAdi" class="form-control">
-
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-10 offset-sm-2">
-                                    <button type="submit" class="btn btn-primary">Kaydet</button>
-                                </div>
-                            </div>
-                            
+                            <button type="submit" class="btn btn-primary w-100">Ekle</button>
                         </form>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="col-md-9">
+                <div class="card shadow h-100">
+                    <div class="card-header py-1 d-flex justify-content-between">
+                        <h5 class="card-title">Roller</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped mb-0">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Rol Adı</th>
+                                        <th>Kullanıcı Sayısı</th>
+                                        <th style="width: 50px;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Admin</td>
+                                        <td>2</td>
+                                        <td>
+                                            <a href="urun.html" class="btn btn-primary btn-sm">
+                                                <i class="fa-solid fa-right-long"></i>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                     <tr>
+                                        <td>1</td>
+                                        <td>Tedarikçi</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="urun.html" class="btn btn-primary btn-sm">
+                                                <i class="fa-solid fa-right-long"></i>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                     <tr>
+                                        <td>1</td>
+                                        <td>Müşteri</td>
+                                        <td>74</td>
+                                        <td>
+                                            <a href="urun.html" class="btn btn-primary btn-sm">
+                                                <i class="fa-solid fa-right-long"></i>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                    
+                                  
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
